@@ -1043,8 +1043,8 @@ local defaults; do
         font           = Enum.Font.SourceSansLight;
         titlefont      = Enum.Font.Highway;
 
-        fontsize       = 15;
-        titlesize      = 18;
+        fontsize       = 19;
+        titlesize      = 25;
 
         textstroke     = 1;
         titlestroke    = 1;
