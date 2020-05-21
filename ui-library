@@ -1028,7 +1028,7 @@ local defaults; do
     
     default = {
         topcolor       = Color3.fromRGB(19, 13, 89);
-        titlecolor     = Color3.fromRGB(255, 255, 255);
+        titlecolor     = Color3.fromRGB(180, 88, 255);
         
         underlinecolor = Color3.fromRGB(255, 51, 129);
         bgcolor        = Color3.fromRGB(19, 13, 89);
@@ -1052,7 +1052,7 @@ local defaults; do
         textcolor      = Color3.fromRGB(180, 88, 255);
         titletextcolor = Color3.fromRGB(255, 51, 129);
 
-        placeholdercolor = Color3.fromRGB(255, 255, 255);
+        placeholdercolor = Color3.fromRGB(180, 88, 255);
         titlestrokecolor = Color3.fromRGB(0, 0, 0);
     }
 
