@@ -1,3 +1,6 @@
+--// Credits to Wally for coding most of this and Inori for coding Wally's drag function
+--// Free to use.
+
 local library = {count = 0, queue = {}, callbacks = {}, rainbowtable = {}, toggled = true, binds = {}};
 local credits = {" "," "}
 local defaults; do
@@ -5,7 +8,6 @@ local defaults; do
         local mouse        = game:GetService("Players").LocalPlayer:GetMouse();
         local inputService = game:GetService('UserInputService');
         local heartbeat    = game:GetService("RunService").Heartbeat;
-        -- // credits to inori and wally for making most of the ui lib
         function dragger.new(frame)
             local s, event = pcall(function()
                 return frame.MouseEnter
@@ -66,7 +68,7 @@ local defaults; do
                     Size = UDim2.new(1, -10, 1, 0);
                     Position = UDim2.new(0, 5, 0, 0);
                     BackgroundTransparency = 1;
-                    Font = Enum.Font.Highway;
+                    Font = Enum.Font.Code;
                     TextSize = options.titlesize;
                     Font = options.titlefont;
                     TextColor3 = options.titletextcolor;
@@ -1027,33 +1029,33 @@ local defaults; do
     end
     
     default = {
-        topcolor       = Color3.fromRGB(19, 13, 89);
+        topcolor       = Color3.fromRGB(17, 25, 103);
         titlecolor     = Color3.fromRGB(255, 23, 92);
         
         underlinecolor = Color3.fromRGB(255, 23, 92);
-        bgcolor        = Color3.fromRGB(255, 23, 92);
-        boxcolor       = Color3.fromRGB(255, 23, 92);
-        btncolor       = Color3.fromRGB(255, 23, 92);
-        dropcolor      = Color3.fromRGB(255, 23, 92);
-        sectncolor     = Color3.fromRGB(255, 23, 92);
-        bordercolor    = Color3.fromRGB(255, 23, 92);
+        bgcolor        = Color3.fromRGB(14, 21, 85);
+        boxcolor       = Color3.fromRGB(14, 21, 85);
+        btncolor       = Color3.fromRGB(17, 26, 107);
+        dropcolor      = Color3.fromRGB(17, 26, 107);
+        sectncolor     = Color3.fromRGB(17, 26, 107);
+        bordercolor    = Color3.fromRGB(15, 9, 72);
 
-        font           = Enum.Font.Cartoon;
+        font           = Enum.Font.SourceSansLight;
         titlefont      = Enum.Font.Highway;
 
-        fontsize       = 13;
-        titlesize      = 16;
+        fontsize       = 12;
+        titlesize      = 15;
 
         textstroke     = 1;
         titlestroke    = 1;
 
-        strokecolor    = Color3.fromRGB(255, 51, 129);
+        strokecolor    = Color3.fromRGB(255, 255, 255);
 
         textcolor      = Color3.fromRGB(255, 23, 92);
         titletextcolor = Color3.fromRGB(255, 23, 92);
 
         placeholdercolor = Color3.fromRGB(255, 23, 92);
-        titlestrokecolor = Color3.fromRGB(0, 0, 0);
+        titlestrokecolor = Color3.fromRGB(255, 255, 255);
     }
 
     library.options = setmetatable({}, {__index = default})
