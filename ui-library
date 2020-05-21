@@ -5,7 +5,7 @@ local defaults; do
         local mouse        = game:GetService("Players").LocalPlayer:GetMouse();
         local inputService = game:GetService('UserInputService');
         local heartbeat    = game:GetService("RunService").Heartbeat;
-        -- // credits to Ririchi / Inori for this cute drag function :)
+        -- // credits to inori and wally for making most of the ui lib
         function dragger.new(frame)
             local s, event = pcall(function()
                 return frame.MouseEnter
@@ -1027,15 +1027,15 @@ local defaults; do
     end
     
     default = {
-        topcolor       = Color3.fromRGB(30, 30, 30);
+        topcolor       = Color3.fromRGB(19, 13, 89);
         titlecolor     = Color3.fromRGB(255, 255, 255);
         
         underlinecolor = Color3.fromRGB(255, 51, 129);
-        bgcolor        = Color3.fromRGB(35, 35, 35);
-        boxcolor       = Color3.fromRGB(35, 35, 35);
-        btncolor       = Color3.fromRGB(25, 25, 25);
-        dropcolor      = Color3.fromRGB(25, 25, 25);
-        sectncolor     = Color3.fromRGB(25, 25, 25);
+        bgcolor        = Color3.fromRGB(19, 13, 89);
+        boxcolor       = Color3.fromRGB(19, 13, 89);
+        btncolor       = Color3.fromRGB(25, 17, 109);
+        dropcolor      = Color3.fromRGB(25, 17, 109);
+        sectncolor     = Color3.fromRGB(25, 17, 109);
         bordercolor    = Color3.fromRGB(60, 60, 60);
 
         font           = Enum.Font.Cartoon;
@@ -1049,7 +1049,7 @@ local defaults; do
 
         strokecolor    = Color3.fromRGB(255, 51, 129);
 
-        textcolor      = Color3.fromRGB(255, 255, 255);
+        textcolor      = Color3.fromRGB(180, 88, 255);
         titletextcolor = Color3.fromRGB(255, 51, 129);
 
         placeholdercolor = Color3.fromRGB(255, 255, 255);
