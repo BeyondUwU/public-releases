@@ -1028,15 +1028,15 @@ local defaults; do
     
     default = {
         topcolor       = Color3.fromRGB(19, 13, 89);
-        titlecolor     = Color3.fromRGB(180, 88, 255);
+        titlecolor     = Color3.fromRGB(255, 23, 92);
         
-        underlinecolor = Color3.fromRGB(255, 51, 129);
-        bgcolor        = Color3.fromRGB(19, 13, 89);
-        boxcolor       = Color3.fromRGB(19, 13, 89);
-        btncolor       = Color3.fromRGB(25, 17, 109);
-        dropcolor      = Color3.fromRGB(25, 17, 109);
-        sectncolor     = Color3.fromRGB(25, 17, 109);
-        bordercolor    = Color3.fromRGB(60, 60, 60);
+        underlinecolor = Color3.fromRGB(255, 23, 92);
+        bgcolor        = Color3.fromRGB(255, 23, 92);
+        boxcolor       = Color3.fromRGB(255, 23, 92);
+        btncolor       = Color3.fromRGB(255, 23, 92);
+        dropcolor      = Color3.fromRGB(255, 23, 92);
+        sectncolor     = Color3.fromRGB(255, 23, 92);
+        bordercolor    = Color3.fromRGB(255, 23, 92);
 
         font           = Enum.Font.Cartoon;
         titlefont      = Enum.Font.Highway;
@@ -1049,10 +1049,10 @@ local defaults; do
 
         strokecolor    = Color3.fromRGB(255, 51, 129);
 
-        textcolor      = Color3.fromRGB(180, 88, 255);
-        titletextcolor = Color3.fromRGB(255, 51, 129);
+        textcolor      = Color3.fromRGB(255, 23, 92);
+        titletextcolor = Color3.fromRGB(255, 23, 92);
 
-        placeholdercolor = Color3.fromRGB(180, 88, 255);
+        placeholdercolor = Color3.fromRGB(255, 23, 92);
         titlestrokecolor = Color3.fromRGB(0, 0, 0);
     }
 
