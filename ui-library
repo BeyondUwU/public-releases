@@ -243,7 +243,7 @@ local defaults; do
             local function click(t)
                 location[flag] = not location[flag];
                 callback(location[flag])
-                check:FindFirstChild(name).Checkmark.Text = location[flag] and utf8.char(10003) or "";
+                check:FindFirstChild(name).Checkmark.Text = location[flag] and "X" or "";
             end
 
             check:FindFirstChild(name).Checkmark.MouseButton1Click:connect(click)
@@ -1041,7 +1041,7 @@ local defaults; do
         bordercolor    = Color3.fromRGB(15, 9, 72);
 
         font           = Enum.Font.SourceSansLight;
-        titlefont      = Enum.Font.SourceSansSemibold;
+        titlefont      = Enum.Font.SourceSansBold;
 
         fontsize       = 19;
         titlesize      = 25;
