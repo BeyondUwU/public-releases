@@ -1,5 +1,5 @@
 --// Credits to Wally for coding most of this and Inori for coding Wally's drag function
---// Free to use.
+--// Free to use & modified by Beyond Bacon
 
 local library = {count = 0, queue = {}, callbacks = {}, rainbowtable = {}, toggled = true, binds = {}};
 local credits = {" "," "}
