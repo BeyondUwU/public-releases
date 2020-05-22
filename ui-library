@@ -1040,8 +1040,8 @@ local defaults; do
         sectncolor     = Color3.fromRGB(17, 26, 107);
         bordercolor    = Color3.fromRGB(15, 9, 72);
 
-        font           = Enum.Font.SourceSansLight;
-        titlefont      = Enum.Font.SourceSansBold;
+        font           = Enum.Font.SourceSansBold;
+        titlefont      = Enum.Font.Highway;
 
         fontsize       = 19;
         titlesize      = 25;
