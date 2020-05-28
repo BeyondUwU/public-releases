@@ -1,0 +1,46 @@
+--// THIS IS WORK IN PROGRESS AND UNDER DEVELOPMENT BECAUSE IT'S BEING CODED FROM SCRATCH //--
+
+-- Variables
+local Players = game:GetService("Players")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local Camera = game:GetService("Workspace").CurrentCamera
+local RunService = game:GetService("RunService")
+local EspTable = {}
+
+-- Functions
+function WTS(pos)
+  return Camera:WorldToScreenPoint(pos)
+end
+
+-- Main Scripting
+
+for i,v in pairs(Players:GetPlayers()) do
+if v ~= LocalPlayer then
+if v.Character ~= nil then
+local NameEsp = table.insert(EspTable, Drawing.new("Text"))
+NameEsp.Text = v.Name
+NameEsp.Size = 18.25
+NameEsp.Color = Color3.new(65, 255, 190)
+NameEsp.Position = WTS(v.Character:FindFirstChild("HumanoidRootPart").Position)
+NameEsp.Outline = false
+NameEsp.Center = true
+end
+end
+
+v.CharacterAdded:Connect(function()
+--
+end)
+
+v.CharacterRemoved:Connect(function()
+--
+end)
+end
+
+Players.PlayerRemoving:Connect(function()
+--
+end)
+
+Players.PlayerAdded:Connect(function()
+--
+end)
